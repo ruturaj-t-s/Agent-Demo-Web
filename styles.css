@@ -124,4 +124,83 @@ body {
   border-radius: 10px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 0 12px rgba(155, 92
+  box-shadow: 0 0 12px rgba(155, 92, 255, 0.15);
+}
+
+.kpi-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.kpi-value {
+  font-size: 1.2rem;
+  margin-top: 6px;
+  color: var(--neon-purple);
+}
+
+/* Model Flow */
+.model-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.flow-node {
+  padding: 10px 14px;
+  border-radius: 20px;
+  background: rgba(60, 242, 255, 0.08);
+  border: 1px solid rgba(60, 242, 255, 0.3);
+  font-size: 0.85rem;
+}
+
+.flow-node.highlight {
+  background: var(--neon-blue);
+  color: #000;
+  box-shadow: 0 0 15px var(--neon-blue);
+}
+
+.flow-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+  margin: 0 6px;
+}
+
+/* Animated Grid */
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.signal-grid span {
+  height: 26px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+  opacity: 0.2;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.signal-grid span:nth-child(even) {
+  animation-delay: 1.2s;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.15; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.15; }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
