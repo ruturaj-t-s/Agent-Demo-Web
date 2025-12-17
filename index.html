@@ -16,58 +16,85 @@
       <p class="subtitle">Your Marketing Intelligence Partner</p>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main class="main">
 
       <!-- Left Panel -->
       <section class="info-panel">
         <h2>What this agent does</h2>
         <p>
-          This AI assistant leverages <strong>Marketing Mix Modeling (MMM)</strong> to analyze
-          channel performance, simulate scenarios, and optimize budgets.
+          This assistant applies <strong>Marketing Mix Modeling (MMM)</strong> to quantify channel
+          impact, simulate scenarios, and optimize marketing budgets using statistically
+          grounded models.
         </p>
 
         <ul class="features">
-          <li>Channel performance analysis</li>
-          <li>Scenario simulation & what-if analysis</li>
-          <li>Budget optimization recommendations</li>
-          <li>MMM model interpretation</li>
+          <li>Channel contribution & ROI analysis</li>
+          <li>What-if scenario simulation</li>
+          <li>Budget optimization under constraints</li>
+          <li>Elasticity & saturation interpretation</li>
         </ul>
 
         <div class="example-questions">
           <h3>Try asking</h3>
-          <button class="example-btn">Which channel shows best performance?</button>
-          <button class="example-btn">What does our model summary tell us?</button>
-          <button class="example-btn">Optimize $10M new budget</button>
-          <button class="example-btn">What if Facebook spend increases by 10%?</button>
+          <button class="example-btn">Which channel performs best?</button>
+          <button class="example-btn">Explain model coefficients</button>
+          <button class="example-btn">Optimize a $10M budget</button>
+          <button class="example-btn">Impact of +10% Facebook spend</button>
         </div>
       </section>
 
-      <!-- Right Panel (Chat) -->
-      <section class="chat-panel">
-        <div class="chat-header">MMM Agent Console</div>
+      <!-- Right Panel : Intelligence Canvas -->
+      <section class="visual-panel">
 
-        <div class="chat-body" id="chatBody">
-          <div class="message agent">
-            Hello. I am your MMM AI Agent. Ask me about performance, budgets, or simulations.
+        <div class="canvas-header">
+          MMM Intelligence Canvas
+        </div>
+
+        <!-- KPI Row -->
+        <div class="kpi-row">
+          <div class="kpi-card">
+            <span class="kpi-label">Sales Lift</span>
+            <span class="kpi-value">+18.4%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">ROI</span>
+            <span class="kpi-value">3.2x</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Top Channel</span>
+            <span class="kpi-value">Search</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Elasticity</span>
+            <span class="kpi-value">0.21</span>
           </div>
         </div>
 
-        <div class="chat-input">
-          <input
-            type="text"
-            id="userInput"
-            placeholder="Ask a marketing question..."
-          />
-          <button id="sendBtn">Send</button>
+        <!-- Model Flow -->
+        <div class="model-flow">
+          <div class="flow-node">Data</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">MMM Model</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">Insights</div>
+          <div class="flow-line"></div>
+          <div class="flow-node highlight">Actions</div>
         </div>
+
+        <!-- Animated Grid -->
+        <div class="signal-grid">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+
       </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-      <span>Demo UI • MMM AI Agent</span>
+      Demo UI • MMM AI Agent
     </footer>
 
   </div>
