@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MMM AI Agent</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">MMM AI Agent</h1>
+      <p class="subtitle">Your Marketing Intelligence Partner</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- Left Panel -->
+      <section class="info-panel">
+        <h2>What this agent does</h2>
+        <p>
+          This AI assistant leverages <strong>Marketing Mix Modeling (MMM)</strong> to analyze
+          channel performance, simulate scenarios, and optimize budgets.
+        </p>
+
+        <ul class="features">
+          <li>Channel performance analysis</li>
+          <li>Scenario simulation & what-if analysis</li>
+          <li>Budget optimization recommendations</li>
+          <li>MMM model interpretation</li>
+        </ul>
+
+        <div class="example-questions">
+          <h3>Try asking</h3>
+          <button class="example-btn">Which channel shows best performance?</button>
+          <button class="example-btn">What does our model summary tell us?</button>
+          <button class="example-btn">Optimize $10M new budget</button>
+          <button class="example-btn">What if Facebook spend increases by 10%?</button>
+        </div>
+      </section>
+
+      <!-- Right Panel (Chat) -->
+      <section class="chat-panel">
+        <div class="chat-header">MMM Agent Console</div>
+
+        <div class="chat-body" id="chatBody">
+          <div class="message agent">
+            Hello. I am your MMM AI Agent. Ask me about performance, budgets, or simulations.
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask a marketing question..."
+          />
+          <button id="sendBtn">Send</button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Demo UI • MMM AI Agent</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
